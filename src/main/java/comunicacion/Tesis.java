@@ -1,11 +1,8 @@
+
 package comunicacion;
-
-import java.util.List;
-import java.util.Arrays;
-
 public class Tesis extends Escrito {
     private String idea;
-    private List<String> argumentos;
+    private String[] argumentos; // Cambiado a String[]
     private String conclusion;
     private String referencias;
     private String interpretacion;
@@ -13,7 +10,7 @@ public class Tesis extends Escrito {
     public Tesis(String origen, String titulo, String autor, int paginas, String idea, String[] argumentos, String conclusion, String referencias, String interpretacion) {
         super(origen, titulo, autor, paginas);
         this.idea = idea;
-        this.argumentos = Arrays.asList(argumentos);
+        this.argumentos = argumentos;
         this.conclusion = conclusion;
         this.referencias = referencias;
         this.interpretacion = interpretacion;
@@ -27,16 +24,12 @@ public class Tesis extends Escrito {
         this.idea = idea;
     }
 
-    public List<String> getArgumentos() {
+    public String[] getArgumentos() { // Retorna String[]
         return argumentos;
     }
 
-    public void setArgumentos(String[] argumentos) {
-        this.argumentos = Arrays.asList(argumentos);
-    }
-
-    public int cantidadArgumentos() {
-        return argumentos.size();
+    public void setArgumentos(String[] argumentos) { // Acepta String[]
+        this.argumentos = argumentos;
     }
 
     public String getConclusion() {
@@ -70,11 +63,15 @@ public class Tesis extends Escrito {
 
     @Override
     public String toString() {
-        return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" + getPaginas() + "\n" + idea + "\n" + conclusion + "\n" + referencias;
+        return super.getOrigen() + "\n" + super.getTitulo() + "\n" + super.getAutor() + "\n" + super.getPaginas() + "\n" + idea + "\n" + conclusion + "\n" + referencias;
     }
 
     @Override
     public int palabrasTotales(int palabrasPagina) {
-        return palabrasPagina * getPaginas() * 5;
+        return palabrasPagina * super.getPaginas() * 5;
+    }
+
+    public int cantidadArgumentos() {
+        return argumentos.length; // Usar length en lugar de size()
     }
 }
