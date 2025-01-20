@@ -1,5 +1,5 @@
 
-private class Alfabeto extends Pictograma {
+public class Alfabeto extends Pictograma {
     private List<String> letras;
     private String interpretacion;
 
