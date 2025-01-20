@@ -1,6 +1,6 @@
 package comunicacion;
 import java.util.List;
-import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Libro extends Escrito {
     private String co_autor;

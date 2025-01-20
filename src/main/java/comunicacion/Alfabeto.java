@@ -1,6 +1,6 @@
 package comunicacion;
 import java.util.List;
-import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Alfabeto extends Pictograma {
     private List<String> letras;
