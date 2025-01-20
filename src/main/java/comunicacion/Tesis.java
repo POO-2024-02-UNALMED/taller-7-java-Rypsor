@@ -61,10 +61,18 @@ public class Tesis extends Escrito {
         return interpretacion;
     }
 
+    
     @Override
     public String toString() {
-        return super.getOrigen() + "\n" + super.getTitulo() + "\n" + super.getAutor() + "\n" + super.getPaginas() + "\n" + idea + "\n" + conclusion + "\n" + referencias;
+        return super.getOrigen() + "\n" +
+               super.getTitulo() + "\n" +
+               super.getAutor() + "\n" +
+               super.getPaginas() + "\n" +
+               idea + "\n" +
+               conclusion + "\n" +
+               referencias;
     }
+    
 
     @Override
     public int palabrasTotales(int palabrasPagina) {
