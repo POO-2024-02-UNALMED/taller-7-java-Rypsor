@@ -6,9 +6,9 @@ public class Alfabeto extends Pictograma {
     private List<String> letras;
     private String interpretacion;
 
-    public Alfabeto(String origen, List<String> letras, String interpretacion) {
+    public Alfabeto(String origen, String[] letras, String interpretacion) {
         super(origen);
-        this.letras = letras;
+        this.letras = Arrays.asList(letras);
         this.interpretacion = interpretacion;
     }
 
@@ -16,8 +16,8 @@ public class Alfabeto extends Pictograma {
         return letras;
     }
 
-    public void setLetras(List<String> letras) {
-        this.letras = letras;
+    public void setLetras(String[] letras) {
+        this.letras = Arrays.asList(letras);
     }
 
     public String getInterpretacion() {

@@ -1,4 +1,4 @@
-package comunicacion;
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -63,3 +63,4 @@ public class Libro extends Escrito {
         return palabrasPagina * getPaginas() * 2;
     }
 }
+
