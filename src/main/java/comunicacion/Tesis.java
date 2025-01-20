@@ -61,7 +61,7 @@ public class Tesis extends Escrito {
         return interpretacion;
     }
 
-    
+
     @Override
     public String toString() {
         return super.getOrigen() + "\n" +
@@ -69,9 +69,11 @@ public class Tesis extends Escrito {
                super.getAutor() + "\n" +
                super.getPaginas() + "\n" +
                idea + "\n" +
+               argumentos.length + "\n" + // Mostrar la cantidad de argumentos
                conclusion + "\n" +
                referencias;
     }
+    
     
 
     @Override
