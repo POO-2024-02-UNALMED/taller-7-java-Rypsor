@@ -73,7 +73,10 @@ public class Tesis extends Escrito {
         return palabrasPagina * getPaginas() * 5;
     }
 
-    public int cantidadArgumentos() {
+    //public int cantidadArgumentos() {
+     //   return argumentos.size();
+   // }
+    public int getArgumentosSize() {
         return argumentos.size();
     }
 }
