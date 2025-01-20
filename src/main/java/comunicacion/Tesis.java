@@ -35,7 +35,7 @@ public class Tesis extends Escrito {
         this.argumentos = Arrays.asList(argumentos);
     }
 
-    public int getArgumentosSize() {
+    public int cantidadArgumentos() {
         return argumentos.size();
     }
 
