@@ -1,3 +1,6 @@
+import java.util.List;
+import java.util.ArrayList;
+
 public class Tesis extends Escrito {
     private String idea;
     private List<String> argumentos;
