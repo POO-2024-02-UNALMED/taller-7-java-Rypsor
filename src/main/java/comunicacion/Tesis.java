@@ -1,4 +1,5 @@
 package comunicacion;
+
 import java.util.List;
 import java.util.Arrays;
 
@@ -32,6 +33,10 @@ public class Tesis extends Escrito {
 
     public void setArgumentos(String[] argumentos) {
         this.argumentos = Arrays.asList(argumentos);
+    }
+
+    public int getArgumentosSize() {
+        return argumentos.size();
     }
 
     public String getConclusion() {
@@ -72,12 +77,4 @@ public class Tesis extends Escrito {
     public int palabrasTotales(int palabrasPagina) {
         return palabrasPagina * getPaginas() * 5;
     }
-
-    //public int cantidadArgumentos() {
-     //   return argumentos.size();
-   // }
-    public int getArgumentosSize() {
-        return argumentos.size();
-    }
 }
-
